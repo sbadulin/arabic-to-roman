@@ -1,0 +1,70 @@
+:root {
+  font-family: sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  --vertical-space: 2em;
+  --horizontal-space: 2em;
+  --measure: 60ch;
+  --radius: 10px;
+  background-color: #073042;
+  color: #fff;
+  font-family: "PT Sans", "Roboto", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+body {
+  margin: 0;
+}
+
+.stack {
+  margin-top: var(--vertical-space);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-top: var(--vertical-space);
+  padding-bottom: var(--vertical-space);
+  padding-left: var(--horizontal-space);
+  padding-right: var(--horizontal-space);
+  /* background-color: #d7effe; */
+  border-radius: var(--radius);
+  max-width: var(--measure);
+}
+
+.converter > input,
+.converter > button {
+  box-sizing: border-box;
+  padding: 1em;
+  font-size: 1.2em;
+  border: 0;
+  border-radius: 0;
+  color: #000;
+}
+
+.converter > input {
+  border-bottom-left-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+.converter > button {
+  background-color: #4285f4;
+  border-bottom-right-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  transition: all 0.1s;
+}
+
+.converter > button:active {
+  background-color: #0b51c1;
+}
+
+.stack > p {
+  font-size: 1.4em;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--vertical-space);
+}
